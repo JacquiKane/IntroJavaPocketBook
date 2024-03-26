@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AP CS Pocket Guide #1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+        @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+    </style>
+    <link rel="stylesheet" href="css/csstyler.css">
+
+</head>
+
+<body>
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="animated fadeInUp">
+                        <h3 class="page-section-title">AP Computer Science Pocket Guide</h3>
+                        <p class="page-section-text">Choose units 1 through 5, or units 1 through 10
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <div class="container">
+
+        <div class="form-check s2select">
+            <br>
+            <label class="switch">
+                <input type="checkbox" id="include2" checked>
+                <span class="slider round"></span>    
+              </label>
+            <label class="form-check-label" for="include2">
+                Include material from units 6 through 10
+              </label>
+
+
+            <!--
+            <input class="form-check-input" type="checkbox" value="" id="include2" data-toggle="toggle">
+            <label class="form-check-label" for="include2">
+          Include material from units 6 through 10
+        </label>
+
+-->
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div id="slide-left-container">
+            <div class="slide-left">
+            </div>
+        </div>
+        <div id="cards-container">
+            <div class="cards">
+
+
+
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="vocab1.png" href="#">
+                        <img src="images\1vocab.png" alt="Vocab Verifier" style="width:100%">
+
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Starter Vocabulary</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="card s2" id="arraysplus">
+                    <a data-toggle="modal" data-target="#datastructures" data-highres="datastructures.png" href="#">
+                        <img src="images\datastructures.png" alt="Vocab Verifier" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Data Structures</b>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#castthee" data-highres="2casting.png" href="#">
+                        <img src="images\2casting.png" alt="Casting A Wider Net" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Casting A Wider Net</b>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#immutablestring" data-highres="3string.png" href="#">
+                        <img src="images\3string.png" alt="Wouldn't Change a String" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Wouldn't Change a String</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#classy" data-highres="4classy.png" href="#">
+                        <img src="images\4classy.png" alt="Be Objective" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Very Classy</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#object" data-highres="5object.png" href="#">
+                        <img src="images\5object.png" alt="Be Objective" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>I, Object</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#method" data-highres="6method.png" href="#">
+                        <img src="images\6method.png" alt="Method In The Madness" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Method In The Madness</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#digitallogic" data-highres="7booleanlogic.png" href="#">
+                        <img src="images\7booleanlogic.png" alt="Digital Logic" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Digital Logic</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#iffy" data-highres="8iffy.png" href="#">
+                        <img src="images\8iffy.png" alt="If" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Conditionals</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#loops" data-highres="9loops.png" href="#">
+                        <img src="images\9loops.png" alt="If" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Loops</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#nested" data-highres="10nested.png" href="#">
+                        <img src="images\10nested.png" alt="Nested structures" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Nested Structures</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <a data-toggle="modal" data-target="#swapping" data-highres="11swapping.png" href="#">
+                        <img src="images\11swapping.png" alt="Swapping values" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Swapping Values</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+
+                <div class="card s2" id="sample2">
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="2darray.png" href="#">
+                        <img src="images\2darray.png" alt="2D Arrays" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>2D-Arrays</b>
+                        </h4>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card s2" id="sample2">
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="recursion.png" href="#">
+                        <img src="images\recursion.png" alt="Recursion" style="width:100%">
+
+                    </a>
+                    <div class="container">
+                        <h4>
+                            <b>Recursion</b>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide-right-container">
+            <div class="slide-right">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container buttons-container">
+
+        <a href="https://jacquikane.github.io/APCSVocab1/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Unit Vocabulary</a>
+        <a href="https://codingbat.com/java" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Coding Bat</a>
+        <a href="https://myap.collegeboard.org/login" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">AP Classroom</a>
+    </div>
+
+    <div class="container keyquestions">
+        <div class="card">
+            <a data-toggle="modal" data-target="#keyq" data-highres="4classy.png" href="#">
+                <img src="images\4classy.png" alt="Be Objective" style="width:100%">
+            </a>
+            <div class="container">
+                <h4>
+                    <b>Key Questions</b>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------   Modals for each unit----------------------- -->
+    <!-- DATA STRUCTURES -->
+    <div class="modal" id="datastructures" tabindex=-1 aria-labelledby="datastructuresLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titledatastructures">Data Structures</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Data Structures</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i>what's a 'data structure'?</td>
+                                <td><i class="material-icons custom">question_answer</i> A data structure is a feature that supports storing and processing data and supporting relationships between data.
+                                </td>
+                            </tr>
+
+                            <tr class="trquestion">
+
+                                <td colspan="2" class="infocell">
+                                    Arrays
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <i class="material-icons custom">stars</i>What's an array?<br>
+                                    <i class="material-icons custom">stars</i>What can an array store?<br>
+                                    <i class="material-icons custom">stars</i>How is an array declared?<br>
+                                    <i class="material-icons custom">stars</i>How are array elements accessed?<br></td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>An array in Java is a data structire that stores a fixed number of items of the same type or class.</p>
+                                    <p>Arrays store either primitive data types and objects. Arrays store only one type of entity.</p>
+                                    <p>An array is an object and has to be instantiated or newed up to accomodate the number of items.</p>
+                                    <p>You can declare an array of primitive types, like ints,<br> &nbsp;&nbsp;&nbsp;int[] numbers;<br><br> This does not allocate space in memory to store the array, or specify how many elements the array will hold. So, the
+                                        array should be newed up.<br><br> &nbsp;&nbsp;&nbsp;numbers = new int[5];<br><br> This can be done with one line of code.<br><br> &nbsp;&nbsp;&nbsp;int[] numbers = new int[5];<br><br>
+
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="infocell">Be aware of the Wrapper classes and how to use them
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> Associate the primitive with the correct wrapper class. <br>
+                                    <i class="material-icons custom">stars</i>Describe <i>auto-boxing</i> and
+                                    <i>un-boxing</i> as these terms relate to primitives and references.
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <table style="border-collapse: collapse;">
+                                        <tr>
+                                            <th>Primitive</th>
+                                            <th>Wrapper Class</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                int
+                                            </td>
+                                            <td>Integer</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                double
+                                            </td>
+                                            <td>Double</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                boolean
+                                            </td>
+                                            <td>Boolean</td>
+
+                                        </tr>
+                                    </table>
+                                    <div>Integer num1 = new Integer(7);<br> num1 = 3; // Auto-boxing, Java 'boxes' the int
+                                        <br> int num2 = num1; // Un-boxing, Java gets value of Integer instance</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- VOCABULARY VERIFIER -->
+    <div class="modal" id="vocabverifier" tabindex=-1 aria-labelledby="vocabverifierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Vocabulary Questions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Primitive data types, reference types</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i>How do primitive data types and reference types differ?</td>
+                                <td><i class="material-icons custom">question_answer</i>Primitives represent values, of known storage requirement. A reference is the beginning memory address of data stored in computer memory.</td>
+                            </tr>
+
+                            <tr class="trquestion">
+
+                                <td colspan="2" class="infocell">
+                                    Know the bit requirements for primitive data types - boolean, int, double
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <i class="material-icons custom">stars</i>Arrange the data types in order of least amount of storage: double, boolean, int</td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>booleans occupy a byte (8 bits) or less, ints occupy 32 bits and doubles take up 64 bits</td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="infocell">Be aware of the Wrapper classes and how to use them
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> Associate the primitive with the correct wrapper class. <br>
+                                    <i class="material-icons custom">stars</i>Describe <i>auto-boxing</i> and
+                                    <i>un-boxing</i> as these terms relate to primitives and references.
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <table style="border-collapse: collapse;">
+                                        <tr>
+                                            <th>Primitive</th>
+                                            <th>Wrapper Class</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                int
+                                            </td>
+                                            <td>Integer</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                double
+                                            </td>
+                                            <td>Double</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                boolean
+                                            </td>
+                                            <td>Boolean</td>
+
+                                        </tr>
+                                    </table>
+                                    <div>Integer num1 = new Integer(7);<br> num1 = 3; // Auto-boxing, Java 'boxes' the int
+                                        <br> int num2 = num1; // Un-boxing, Java gets value of Integer instance</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CASTING -->
+    <div class="modal" id="castthee" tabindex=-1 aria-labelledby="castinglabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="exampleModalLabel">Implications Of Casting</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Casting an int to a double</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> Casting an int to a double is a particular type of conversion - what type is it?<br>
+                                    <i class="material-icons custom">stars</i> What are the implications of casting a double to an int?
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>Casting from an int to a double is a widening conversion, because int can store less than double.<br> int num1 = 7;
+                                    <br> double num1 = (double)num1; // Widening conversion<br>
+
+                                    <br><br> A narrowing conversion occurs when a double is cast to an int, as this means that some information might be lost. Any fractional part will be truncated.
+                                    <br> double num2 = 7.777;<br> int num3 = (int)num2;<br> Now, the value of num3 is 7.
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- STRING -->
+    <div class="modal" id="immutablestring" tabindex=-1 aria-labelledby="immutablestringLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">String instances are immutable</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Assigning a value to a String instance
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> How are String instances initialized?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> String instances are objects, their value is a memory address or reference. The content of that memory address is the content of the string instance.<br> You can
+                                    new up (instantiate) a String instance or you can assign a string literal.
+                                    <p>
+                                        String firstName = "Jane";<br> String lastName = new String("Blake");
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Comparing Strings
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What is the correct way to compare strings?
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> Strings are objects, their value is a memory address. The content of that memory address is the content of the string instance.<br> Always use the equals method to
+                                    compare strings.
+                                    <p>
+                                        String name1 = "Jane";<br> String name2 = new String("Jane");
+                                        <br> if (name1.equals(name2)) <br> &nbsp;&nbsp;System.out.println("Same name!");
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Immutability implications
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> Can strings be changed?<br>
+
+                                    <i class="material-icons custom">stars</i> What happens when a string is passed into a method and then modified?<br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i> Strings are immutable, they never change after they have been initialized. Instead, a new string instance is created.
+                                    <br>
+                                    <p>
+                                        String name = "Jane";&nbsp;&nbsp;&nbsp;// this might be at memory address 0x24B76A73
+                                        <br> name = name + " Newport";&nbsp;&nbsp; // new instance, maybe memory address 0x712BD7333
+
+                                    </p>
+                                    <p>
+                                        Given method,<br>
+                                        <br> public int changer(String name, int age) {<br> &nbsp;&nbsp;name += "&lt;Last Name&gt;";<br> &nbsp;&nbsp;age += 1;
+                                        <br> }
+                                        <br><br> In the runner code,<br><br> String pName = "&lt;First Name&gt;";<br> int pAge = 21;<br>
+                                        <br> changer(pName, pAge);<br>
+
+                                        <p>
+                                            <ul>
+                                                <li>Java is <span class="oomph">Pass By Value</span> which means that only the value of a variable is passed to a method or function.
+                                                    <li>In the case of references, Java is termed <span class="oomph">Pass
+                                                        By Object
+                                                        Reference</span>.
+
+                                            </ul>
+                                            When a reference is passed to a method, the method can access the parts of the object. However, because strings are immutable, when a string instance is modified, a new string is created. This means that the value of the string in the calling code does
+                                            not reflect any changes when the method returns. So, pName is still set to "&lt;First Name&gt;". In the example, after method changer is called, pAge does not change either and is still set to 21.
+                                        </p>
+                                    </p>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CLASSY -->
+    <div class="modal" id="classy" tabindex=-1 aria-labelledby="classyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Classes, OOP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Class</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> What is a class?<br>
+                                    <i class="material-icons custom">stars</i> What are class analogies?
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>A class is a software template for creating a software model, called an object.<br>
+
+                                    <br>Think of an achitectural blueprint as a class, and the house built from this, as an object.
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Object Oriented Programming</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> How does a Class relate to OOP?<br>
+                                    <i class="material-icons custom">stars</i> What is OOP?
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>Object Oriented Programming (OOP) is a software engineering paradigm that uses data models called objects, as the basis of the application. Objects are created from templates called classes.</p>
+                                    <br>
+                                    <p>The 4 tenets of object oriented programming are
+                                        <ul>
+                                            <li>Abstraction - part of the design prcess in identifying classes</li>
+                                            <li>Polymorphism - how different objects respond in differentiated ways to the same request</li>
+                                            <li>Inheritance - the ability for one class, the subclass, to use the code base of another class, the superclass</li>
+                                            <li>Encapsulation - keeping data and logic subsumed within a class</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">The structure of a class</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>How is a class declared?<br>
+                                    <i class="material-icons custom">stars</i> What is an attribute?<br>
+                                    <i class="material-icons custom">stars</i> What's a method?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>
+                                        A class is a software template for creating a data model called an object, or for acting as a repository for code that can be called by using the class name.
+                                    </p>
+                                    A class is typically declared public so as to be visible to client code. </p>
+                                    <p>A class defines properties called attributes. These properties are called
+                                        <span class="oomph">instance variables</span> if they apply to the instance created on instantiation. They are called <span class="oomph">class
+                                            variables</span> if they apply to the class.</p>
+                                    <p>A class defines methods - these are blocks of code given a label and a return type/class, as well as an optional list of data passed into the code block -
+                                        <span class="oomph">parameters</span>. A method describes what the object can do, and can apply to an instance (instance method) or class (class method). Constructors, accessors and mutators are special methods.
+                                    </p>
+                                    <br> public class SoccerPlayer {<br> &nbsp; &nbsp;&nbsp; &lt;Attributes&gt;<br> &nbsp; &nbsp;&nbsp; &lt;Constructors&gt;<br> &nbsp; &nbsp;&nbsp; &lt;Accessors & Mutators&gt;<br> &nbsp; &nbsp;&nbsp; &lt;other methods&gt;
+                                    <br> <br> }
+                                    <br>
+
+
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Attribbutes and how they are accessed</td>
+                            </tr>
+                            <td>
+
+
+                                <i class="material-icons custom">stars</i> Are attributes protected?<br>
+                                <i class="material-icons custom">stars</i> How are attribute values seen?<br>
+
+                            </td>
+                            <td>
+                                <p> <i class="material-icons custom">question_answer</i> In this example, the class is SoccerPlayer, and the attributes are shown.
+                                    <br> public class SoccerPlayer { &nbsp; &nbsp;&nbsp; // These properties can only be accessed directly <br> &nbsp; &nbsp;&nbsp; // from inside the SoccerPlayer class <br> &nbsp; &nbsp;&nbsp; private String name; <br>                                    &nbsp; &nbsp;&nbsp; private String position; <br> &nbsp; &nbsp;&nbsp; private String club; <br>
+                                    <br><br>
+
+                                    <p>The attributes (also called properties) defined are name, position and club. These are declared <span class="oomph">private</span> by convention. This is so that they can only be accessed directly from within the object
+                                        itself. From outside, calling code uses getters and setters (accessors and mutators).
+                                        <p>
+                                            <br> &nbsp; &nbsp;&nbsp; // Setters<br> &nbsp; &nbsp;&nbsp; public void setName(String playerName) {<br> &nbsp; &nbsp;&nbsp; name = playerName;<br> &nbsp; &nbsp;&nbsp; }<br>
+                                            <br> ….
+                                            <br>
+                                            <br> &nbsp; &nbsp;&nbsp; // Getters<br> &nbsp; &nbsp;&nbsp; public String getName() {<br> &nbsp; &nbsp;&nbsp; return name;<br><br> &nbsp; &nbsp;&nbsp; } ……
+
+                                            </pre>
+                                        </p>
+                                        <p>An instance method is called on the object or instance, and an instance variable's value is tied to the specific object. Important! An instance has to exist before an instance method can be called. </p>
+                                        <p>
+                                            <p>
+                                                SoccerPlayer player = new SoccerPlayer();
+                                                <br> player.setName("Harry Kane");
+                                            </p>
+                                            <p>Variable, player, is an instance of SoccerPlayer. Attribute, name, has been set to "Harry Kane".</p>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Static attributes and methods</td>
+                            </tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What is a static variable?<br>
+                                <i class="material-icons custom">stars</i> What is a static method?<br>
+                            </td>
+                            <td>
+                                <p>A class, or static, method is called on the class, and a static variable's value is retained because it is associated with a class. (using the class name).</p>
+                                <p>
+                                    <p>The keyword, <span class="oomph">static</span>, is used to indicate that the attribute or the method is bound to the class.</p>
+                                    <br> public static int numberOfPlayers;<br>
+                                    <br><br>
+                                    <br> // Static Method <br> public static void playerRequirements() {<br> &nbsp; &nbsp;&nbsp; System.out.println("Players must be 18 years or older.");<br> }
+                                    <br>
+
+
+                                    <p>This method can be called using just the class name,<br>
+                                        <br> SoccerPlayer.playerRequirements();
+                                    </p>
+                                    <p>The static variable can be accessed and incremented each time a constructor is called, and the number of players created can be tallied.
+                                        <br><br>SoccerPlayer.numberOfPlayers += 1;
+                                    </p>
+
+                                </p>
+                                <p>
+                                    The class is <span class="oomph">instantiated</span> or newed up, into an object or istance. Constructors are special methods responsible for creating an instance from a class.
+                                </p>
+                                </p>
+                                </p>
+                            </td>
+                            </tr>
+
+                            <tr>
+                                <td class="infocell" colspan="2">Constructors</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>What's a constructor?<br>
+                                    <i class="material-icons custom">stars</i> Can constructors be overloaded?<br>
+                                    <i class="material-icons custom">stars</i> What happens if no constructor is declared?
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> A constructor is a special method that is instrumental in instantiating (newing up) an instance from a class. If no constructor is declared, then Java allows for
+                                    the defualt or empty constructor to be used.
+                                    <br> SoccerPlayer player = new SoccerPlayer();
+                                    <br>
+                                    <p>Once a constructor is declared, then the empty constructor must be added to the constructor declarations.</p>
+                                    <br> public SoccerPlayer() { // empty constructor<br> }
+                                    <br><br><br> // Parameterized constructor<br> public SoccerPlayer(String name, double age, String position, String club) {<br> &nbsp; &nbsp;&nbsp; this.name = name;<br> &nbsp; &nbsp;&nbsp; this.age = age;<br> &nbsp;
+                                    &nbsp;&nbsp; this.position = position;<br> &nbsp; &nbsp;&nbsp; this.club = club;<br> }
+                                    <br>
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- OBJECT -->
+    <div class="modal" id="object" tabindex=-1 aria-labelledby="objectLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Using Objects</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Creating Objects</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i>How are objects created?<br>
+                                    <i class="material-icons custom">stars</i>What is the role of the constructor?
+                                    <br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i> Objects (also called instances) are newed up (instantiated) from a class definition, like SoccerPlayer, below.<br>
+                                    <br> public class SoccerPlayer {<br> &nbsp; &nbsp;&nbsp; .....<br> }
+                                    <br>
+                                    <br>
+                                    <br>SoccerPlayer player = new SoccerPlayer();<br>
+                                    <br>SoccerPlayer player2 = new SoccerPlayer("Harry Kane", 27, "Striker", "Tottenham Hotspurs");
+                                    <br>
+                                    <p>The constructor is involved in this process, which creates space in memory for storing the new object.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Comparing Objects</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i>How can you tell if objects are the same?
+                                    <br>
+                                    <i class="material-icons custom">stars</i>What's an alias?<br>
+                                    <i class="material-icons custom">stars</i>When are objects aliases of each other?
+                                    <br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i> Objects are references to locations in computer memory, that contain information.
+                                    <br>SoccerPlayer player = new SoccerPlayer();<br> player.setName("Harry Kane");
+                                    <br> player.setAge(27);
+                                    <br> player.setPosition("Striker");
+                                    <br> player.setClub("Tottenham Hotspurs");<br>
+                                    <br> // Using a different constructor,
+                                    <br>SoccerPlayer player2 = new SoccerPlayer("Harry Kane", 27, "Striker", "Tottenham Hotspurs");
+                                    <br>
+                                    <p>It looks like both players have the same information, but they do point to different memory locations. So, a comparison with the equality operaor will yield false.</p>
+
+                                    <p>In order to compare the content, an equals method is needed.
+                                        <br> public boolean equals(SoccerPlayer player) {<br> &nbsp; &nbsp;&nbsp; if (this.name.equals(player.getName()) && <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; this.age == player.getAge() &&<br> &nbsp; &nbsp;&nbsp;
+                                        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; this.position.equals(player.getPosition()) &&<br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; this.club.equals(player.getClub()))<br> &nbsp;
+                                        &nbsp;&nbsp; return true;<br> &nbsp;else
+                                        <br> &nbsp; &nbsp;&nbsp; return false;<br> }
+                                        <br>
+                                        <br> After an assignment, things change,
+                                        <br>player = player2;<br> Now, player and player2 point to the same memory location and they really are the same in every way, memory address and content. The equality operator, ==, returns true!
+                                        <p>
+                                            if (player == player2)<br> &nbsp;&nbsp;System.out.print("Aliases!!!!");
+                                        </p>
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Method -->
+    <div class="modal center-me" id="method" tabindex=-1 aria-labelledby="methodLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Understanding methods</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Structure of a method
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What's a method header?<br>
+                                    <i class="material-icons custom">stars</i> What does 'return' mean?<br>
+                                    <i class="material-icons custom">stars</i> Do methods always return stuff?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>
+                                        Methods are blocks of code, given a name, and an optional set of values to be passed in to the method from the calling code. Methods also specify what, if any, information is to be passed back from the method to the calling code. This comprises the method
+                                        header.
+                                    </p>
+                                    <p>
+                                        &lt;(optional)accessibility modifier&gt; &lt;return type&gt; &lt;method name&gt; (&lt;parameter list &gt;(optional))
+                                        <br> {
+                                        <br> &lt; Body of the method &gt;<br> &lt;return value;&gt;(based on return type)
+                                        <br> &nbsp;&nbsp;&nbsp; }
+                                    </p>
+                                    <p>If return type is int, then an int should be returned to the calling code. If the return type is specified as void, then no return value is expected.</p>
+
+                                    public double distanceToTopOfGoal(double distanceFromGoal) {<br> &nbsp; &nbsp;&nbsp; double distance = Math.sqrt(Math.pow(distanceFromGoal, 2) + <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; Math.pow(GOAL_HEIGHT_IN_FT
+                                    - 0.3, 2));<br> &nbsp; &nbsp;&nbsp; return distance;<br> }
+                                    <br>
+
+                                    <p>Above, the method is called distanceToTopOfGoal, it returns a double value to the calling code, and is accessible from client code because of the public accessibility modifier. A value, distanceFromGoal, which is of
+                                        type double, is passed into the method.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Parameters
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What are formal parameters?<br>
+                                    <i class="material-icons custom">stars</i> What are actual parameters?<br>
+                                    <i class="material-icons custom">stars</i> Does the order of the parameters matter?
+                                    <br>
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> In the method definition, formal parameters are the values that are specified as the values expected to be passed in, in the call. The method below, isProlificScorer,
+                                    is defined in a class called SoccerClub, and is an instance method.
+                                    <br> public String isProlificScorer(int goals, String playerName) {<br> &nbsp; &nbsp;&nbsp; if (goals > MAX) {<br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; return playerName + " is a prolific scorer!";<br> &nbsp; &nbsp;&nbsp;
+                                    else
+                                    <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; return playername + " should keep practicing!";<br> &nbsp; &nbsp;&nbsp; }<br>
+
+                                    <br>
+                                    <p><i>goals</i> and <i>playername</i> are formal parameters.</p>
+                                    <p>In the call, actual parameters give values to the formal parameters.</p>
+                                    <br> SoccerClub club = new SoccerClub();<br> club.isProlificScorer(27, "Harry Kane");<br>
+                                    <br>
+                                    <p>
+                                        In the method, goals has a value of 27, and playerName is set to "Harry Kane".
+                                    </p>
+                                    <p>
+                                        The parameters are positional, which means that calling the method with,<br> club.isProlificScorer("Harry Kane", 27);
+
+                                    </p>
+                                    <p>... would result in an error!</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Passing variables to methods
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>Are variables changed by methods?<br>
+
+                                    <i class="material-icons custom">stars</i> What does 'pass by value' mean?<br>
+                                    <i class="material-icons custom">stars</i> What does 'pass by object reference' mean?
+                                    <br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i> Java is 'pass by value'. This means that only the value of variable is passed to a method, so the variable's value remains unchanged in the calling code. However, Java
+                                    is also 'pass by object reference'. This means that an object's reference (memory address) is passed to a method, and that the content of the object can be accessed and modified because of this.
+
+                                    <br>
+                                    <p>
+                                        SoccerPlayer player = new SoccerPlayer();&nbsp;&nbsp;&nbsp;<br> player.setName("Harry Kane");
+                                        <br> int clubLeaguePosition = 5;
+
+                                    </p>
+                                    <p>
+                                        Given method,<br>
+                                        <br> public int changer(SoccerPlayer player, int position) {<br> &nbsp; &nbsp;&nbsp; player.setName(player.getName() + " XXX ");<br> &nbsp; &nbsp;&nbsp; position += 1;<br> }
+                                        <br>
+                                        <br>
+                                        <p>In the runner code,</p>
+                                        <br> changer(player, clubLeaguePosition);
+                                        <br>
+                                        <p>
+                                            <ul>
+                                                <li>Java is <span class="oomph">Pass By Value</span> which means that only the value of a variable is passed to a method or function => variable, position, is still set to 1 - it has not changed.
+                                                    <li>In the case of references, Java is termed <span class="oomph">Pass
+                                                        By Object
+                                                        Reference</span>. player's name attribute has been changed and is now "Harry Kane XXX "
+
+                                            </ul>
+
+                                        </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">static method, instance method
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What's a static method?<br>
+                                    <i class="material-icons custom">stars</i> What's an instance method?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> Static methods are also known as class methods because they are bound to the class, not the object. Static methods are declared with key word, static.
+                                    <p>
+                                        public class SoccerClub {<br> ...
+                                        <br> &nbsp;&nbsp;&nbsp;public static soccerMotto() {...}<br><br> }
+                                        <br><br> SoccerClub.soccerMotto();
+                                        <br>
+                                    </p>
+                                    <p>Instance methods need an instance of the class!</p>
+                                    <p>
+                                        public class SoccerClub {<br> ...
+                                        <br> &nbsp;&nbsp;&nbsp;public static soccerMotto() {...}<br><br> }
+                                        <br><br> SoccerClub.soccerMotto();
+                                        <br> public listPlayers() {...}<br><br> SoccerClub club = new SoccerClub();
+                                        <br> club.listPlayers();
+                                        <br>
+                                    </p>
+                                </td>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- DIGITAL LOGIC -->
+    <div class="modal" id="digitallogic" tabindex=-1 aria-labelledby="digitallogicLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Logic behind evaluation and comparisons</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">What is Boolean logic?</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i>What is Boolean Logic?<br>
+                                    <i class="material-icons custom">stars</i>Is there a boolean data type?
+                                    <td>
+                                        <i class="material-icons custom">question_answer</i>
+                                        <p>Boolean logic is a branch of mathematics devleoped by mathematician George Boole, in the 1800s.</p>
+                                        <p>Primitive data type, boolean, and wrapper class, Boolean, represent boolean values of true or false only.</p>
+                                        <p>
+                                            <br> boolean isReady = false;<br> Boolean isComplete = new Boolean(true);<br> Boolean isHere = true; // Auto-boxing<br>
+                                            <br> The boolean data type has associated storage of a byte or less.
+                                        </p>
+                                    </td>
+
+                            </tr>
+
+                            <tr class="trquestion">
+
+                                <td colspan="2" class="infocell">
+                                    Basic Boolean operators
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <i class="material-icons custom">stars</i>What Boolean operators are important?
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> There are more Boolean operators, but the 3 basic Boolean operators are AND, OR and NOT. The other operators are composed of these three.
+                                    <p>
+                                        <table>
+                                            <tr>
+                                                <td>AND</td>
+                                                <td>&&</td>
+                                            </tr>
+                                            <tr>
+                                                <td>OR</td>
+                                                <td>||</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NOT</td>
+                                                <td>!</td>
+                                            </tr>
+                                        </table>
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="infocell">Boolean expressions
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>What are simple Boolean expressions?
+                                    <br>
+                                    <i class="material-icons custom">stars</i>What are compound Boolean expressions?
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> Boolean expressions evaluate to either true or false. Compound Boolean expressions are Boolean expressions that are joined by Boolean operators, and also evaluate
+                                    to true or false.
+                                    <p>
+                                        int val1 = 3;<br> int val2 = 3;<br> boolean areEqual = (val1 == val2);<br> serviced = true;<br> sanitized = false;<br> boolean roomReady = serviced && sanitized;
+                                    </p>
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="2" class="infocell">Truth tables
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>What is a truth table?<br>
+                                    <i class="material-icons custom">stars</i>How do truth tables help evaluate Boolean expressions?
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>Truth tables show the result of evaluating a Boolean expression with 2 (or more) operands. Here are truth tables for the three basic boolean operations - AND, OR, NOT.
+                                    </p>
+                                    <div> <img class="imgUnit" src="images/boolean1.png">
+                                        <img class="imgUnit" src="images/boolean2.png">
+                                        <img class="imgUnit" src="images/boolean3.png"></div>
+
+                                    <p style="padding-top: 5px;">
+                                        Given Boolean variables isA and isB,<br> isA && isB is true only when both isA and isB are true, false otherwise.<br> isA || isB is false only when both isA and isB are false.<br><br> isA and isB are set to false
+                                        and true respectively<br><br> isA && isB is false<br> isA || isB is true<br> !(isA) is true, because isA is false.<br>
+                                    </p>
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="2" class="infocell">Logic gates
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>What digital logic gates represent Boolean operations?
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>
+                                        Logic gates represent Boolean operations in circuit diagrams.
+                                    </p>
+
+                                    <h6>AND</h6><img class="imgUnit" src="images/andgate.png">
+
+                                    <br><br>
+                                    <h6>OR</h6>
+                                    <img class="imgUnit" src="images/or.png">
+                                    <br><br>
+                                    <h6>NOT</h6>
+                                    <img class="imgUnit" src="images/not.png">
+
+                                    <p style="padding-top: 5px;">
+                                        These gates can be viewed in the same way as truth tables, with operands and an output.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="2" class="infocell">Simplifying Boolean exressions
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <i class="material-icons custom">stars</i>Can Boolean expressions be short-circuited?
+                                    <br>
+                                    <i class="material-icons custom">stars</i>What is De Morgan's Law?<br>
+                                    <i class="material-icons custom">stars</i>How is De Morgan's Law useful?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>Compound Boolean expression may not have to be fully evaluated, they may be
+                                        <i>short-circuited</i>. If the first expression in an AND operation is false, then stop right there - the expression is false. If the first expression in an OR is true, the same principal applies, as the expression
+                                        must be true.
+                                        <br> int goals = 7;<br> int goalScoringThreshold = 15;<br>
+                                        <br> if (goals &gt; goalScoringThreshold) && ...... // Java stops here as the expression must be false <br>
+                                        <br> if (goals &lt; goalScoringThreshold) || ..... // Java stops here as the ex[ression must be true]
+                                        <br>
+                                    </p>
+                                    <p>
+                                        De Morgan's law provides a strategy to simplify Boolean expressions.
+                                    </p>
+                                    <p>Given Boolean variables a and b, comprising Boolean expressions,</p>
+                                    <h6>!(a && b) &lt;=&gt; !a || !b</h6>
+                                    <h6>!(a || b) &lt;=&gt; !a && !b</h6>
+
+                                    <p style="padding-top: 5px;">
+                                        De Morgan's law can be applied to more complex expressions. This helps to simplify the evaluation and determine the outcome.
+                                    </p>
+                                    <br> ! ( ( a || !b) && (a && b) )<br><br> Apply the negate to the sub-expressions, and switch the && to an ||<br><br> !( a || !b ) || !(a && b )<br><br> Now distribute the negate across each of the sub-expressions<br><br>                                    (!a && b) || (!a || b)<br><br> This is true if b is true.<br><br>
+
+
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CONDITIONALS -->
+    <div class="modal" id="iffy" tabindex=-1 aria-labelledby="iffyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">The Conditional, If statement</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">If statement</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What are If statements used for?<br>
+
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p><i>If statements, conditionals</i> support making decisions based on the value of a Boolean expression, or condition. </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="infocell" colspan="2">One way selection statment</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> Why would a one way selection statement be used?<br></td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p>A one way selection statement is used when action should be taken based on a Boolean expression's truth, and no action otherwise.</p>
+                                    <br> int goals = 4; <br> int goalScoringThreshold = 15; <br> if (goals &gt; goalScoringThreshold) { <br> &nbsp; &nbsp;&nbsp; System.out.println("Goal scoring range exceeds expectations!");<br> &nbsp; &nbsp;&nbsp; }<br>
+
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="infocell" colspan="2">Two way selection statment</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> Why would a two way selection statement be used?<br></td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p>A two way selection statement is used when action should be taken based on a Boolean expression's truth, and another action should be taken based on the expression being false.</p>
+                                    <br> int goals = 4; <br> int goalScoringThreshold = 15; <br><br> if (goals &gt; goalScoringThreshold) { <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; System.out.println("Goal scoring range exceeds
+                                    expectations!");
+                                    <br> &nbsp; &nbsp;&nbsp; }<br> else {<br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; System.out.println("Player may need more training!"); <br> &nbsp; &nbsp;&nbsp; }<br>
+
+
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td class="infocell" colspan="2">Multi way selection statment</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> Why would a multi-way way selection statement be used?<br>
+                                    <i class="material-icons custom">stars</i> Why is it better to use if/else if../else instead of a sequence of if statements?
+                                    <br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p>A multi way selection statement is used when different actions should be taken based on a Boolean expression's truth, such as the value of a discrete quantity, like goals scored by a soccer player this season.</p>
+
+                                    int goals = 4; <br> int goalScoringThreshold = 15; <br>
+                                    <br> if (goals &gt; goalScoringThreshold) { <br> &nbsp; &nbsp;&nbsp; System.out.println("Scoring range exceeds expectations!");<br> &nbsp; &nbsp;&nbsp; }<br> else if (goals &gt; 10) {<br> &nbsp; &nbsp;&nbsp; System.out.println("Scoring
+                                    within range!"); <br> &nbsp; &nbsp;&nbsp; }<br> else if (goals &gt; 5) {<br> &nbsp; &nbsp;&nbsp; System.out.println("Scoring acceptable, outside range!"); <br> &nbsp; &nbsp;&nbsp; } <br> else {<br> &nbsp; &nbsp;&nbsp;
+                                    System.out.println("Scoring unacceptable, training!"); <br> &nbsp; &nbsp;&nbsp; }<br>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Sequence of ifs</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> Why is it better to use if/else if../else instead of a sequence of if statements?<br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p>When one of the conditions is true, the code associated with the condition is executed. After a branch executes, control flows away from the if statement. Where the value of a variable has not changed, it is inefficient
+                                        to use a sequence of singleton if statements. This is because a condition that is true has already been found. There is no point in evaluating all the other possibities.
+                                    </p>
+
+                                    <br> int goals = 4; <br> int goalScoringThreshold = 15; <br>
+                                    <br> if (goals &gt; goalScoringThreshold) { <br> &nbsp; &nbsp;&nbsp; System.out.println("Goal scoring exceeds expectations!");<br> &nbsp; &nbsp;&nbsp; }<br> if ((goals &gt; 10) &amp;&amp; (goals &lt;= 15))<br> &nbsp;
+                                    &nbsp;&nbsp; System.out.println("Goal scoring within range!"); <br> &nbsp; &nbsp;&nbsp; } <br> if (goals &lt; 5) {<br> &nbsp; &nbsp;&nbsp; System.out.println("Goal scoring unacceptable, training!"); <br> &nbsp; &nbsp;&nbsp;
+                                    }
+                                    <br>
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Loops -->
+    <div class="modal center-me" id="loops" tabindex=-1 aria-labelledby="loopsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How loops work</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Intent of loops
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What's the purpose of a loop?<br>
+                                    <i class="material-icons custom">stars</i> What does iteration mean?<br>
+                                    <i class="material-icons custom">stars</i> What terms are associated with a loop?
+                                    <br>
+                                    <i class="material-icons custom">stars</i> When are loops required?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+
+                                    <p>Loops are structures that support repetitive execution of a sequence of commands, like adding compound interest to a bank account, or printing the times tables.
+                                    </p>
+                                    <p>Loops are useful when a set of commands should be repeated, either infinitely or a set number of times.</p>
+                                    <p>A common term used to represent looping is <i>iteration</i>, as in, a loop might
+                                        <i>iterate</i> or repeat x amount of times. The body of the loop describes code that is executed each time through the loop. A special variable called a loop variable, sentry variable or control variable guards
+                                        access to the loop by virtue of being used in a loop condition. The loop condition determines access to and continued execution of the loop - when the loop condition is no longer true, the loop exits.</p>
+                                    <br>
+                                    <br> while (condition is true) <br> &nbsp; &nbsp;&nbsp; statements in body of loop<br>
+                                    <br>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">While loop
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> How is a while loop structured?<br>
+                                    <i class="material-icons custom">stars</i> When does a while loop become an infinite loop?
+                                    <br>
+                                    <i class="material-icons custom">stars</i> How many times does a while loop execute?
+                                    <br>
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> A while loop is a type of loop characterized by key word,
+                                    <i>while</i> , a loop condition and statements in the body of the loop, executed each time the loop iterates.
+                                    <br> int itemNumber = 1;<br> while (itemNumber &lt; MAX_ITEMS) {<br> &nbsp; &nbsp;&nbsp; System.out.println("Processing item number " + itemNumber); <br> &nbsp; &nbsp;&nbsp; processItem(itemNumber);<br> &nbsp; &nbsp;&nbsp;
+                                    itemNumber++;
+                                    <br> }
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <table>
+                                        <tr>
+                                            <td>int itemNumber = 1;</td>
+                                            <td>Optional loop initialization</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                while (itemNumber &lt; MAX_ITEMS)
+                                            </td>
+                                            <td>key word, while, loop condition. Note sentry variable, itemNumber
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>System.out.println("..."");
+                                                <br>processItem(itemNumber);
+                                                <br>itemNumber++;
+                                            </td>
+                                            <td>Statements in the body of the loop. Note increment of itemNumber
+                                            </td>
+                                        </tr>
+                                    </table>
+
+
+
+
+                                    <br>
+
+                                    <p>
+                                        The while loop executes until the loop condition is false. If MAX_ITEMS is 10, then the loop executes for values of itemNumber of 1,2,3,4,5,6,7,8,9. This is 9 times in total.
+                                    </p>
+                                    <p>If the loop variable, itemNumber, is not incremented in the body of the loop, then the loop will be an infinite loop because the loop condition, which is that itemNumber be less than MAX_ITEMS, is always true.</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">For loop
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> How is a for loop structured?<br>
+                                    <i class="material-icons custom">stars</i> When does a for loop become an infinite loop?
+                                    <br>
+                                    <i class="material-icons custom">stars</i> How many times does a for loop execute?
+                                    <i class="material-icons custom">stars</i> Is it necessary to include all parts of the for loop?
+                                    <br>
+                                    <br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <br>
+                                    <p>
+                                        The for loop is characterized by key word, <i>for</i>, an optional initialization part, a loop condition, and an optional loop statement.
+
+                                    </p>
+                                    <p>
+                                        <br>
+                                        <br> for (int itemNumber = 1; itemNumber &lt; MAX_ITEMS; itemNumber++) {<br> &nbsp; &nbsp;&nbsp; System.out.println("Processing item number " + itemNumber); <br> &nbsp; &nbsp;&nbsp; processItem(itemNumber);<br>                                        }
+                                        <br>
+
+
+                                    </p>
+
+                                    <table>
+
+                                        <tr>
+                                            <td>
+                                                for (int itemNumber = 1; itemNumber &lt; MAX_ITEMS; itemNumber++)
+                                            </td>
+                                            <td>key word, <i>for</i>, optional initialization of loop variable, itemNumber, loop condition and optional loop statement with increment of the loop variable, itemNumber.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>System.out.println("...");<br>
+                                                <br>processItem(itemNumber);
+                                            </td>
+                                            <td>Statements in the body of the loop. </td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <p>The initialization part can be done prior to the for loop, and the loop statement can be left out. The loop could be written
+                                        <br> int itemNumber = 1;<br> for ( ; itemNumber &lt; MAX_ITEMS;) {<br> &nbsp; &nbsp;&nbsp; processItem(itemNumber);<br> &nbsp; &nbsp;&nbsp; itemNumber++;<br> }
+                                        <br>
+                                    </p>
+                                    <p>The for loop runs as long as the loop condition is true. If MAX_ITEMS has a value of 10, the loop iterates through values for itemNumber of 1,2,3,4,5,6,7,8,9. This is a total of 9 iterations.
+                                    </p>
+                                </td>
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Nested Structures -->
+    <div class="modal center-me" id="nested" tabindex=-1 aria-labelledby="nestedLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nested conditionals, nested loops</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Nested Conditionals
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What are nested conditionals?<br>
+                                    <i class="material-icons custom">stars</i> What's the purpose of a nested conditional?
+                                    <br>
+                                    <i class="material-icons custom">stars</i> Can a nested conditional be represented as a compound condition?<br>
+                                    <br>
+                                    <i class="material-icons custom">stars</i> When are nested conditionals required?
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+
+                                    <p>Nested conditionals are conditionals inside other conditionals.
+                                    </p>
+                                    <p>Nested ifs, or nested conditionals, represent a compound condition, like, ascertaining first if a soccer player is a goal keeper, and then figuring out if the player should be on the junior team or the senior team,
+                                        based on age.</p>
+
+                                    <p>Given SoccerPlayer object, player,</p>
+                                    <br> if (player.isGoalKeeper()){ <br>&nbsp; &nbsp;&nbsp; if (player.getAge() >= 21) { <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; System.out.println("Put player " + player.getName()) + " on the senior team as a goal
+                                    keeper");
+                                    <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; } <br>&nbsp; &nbsp;&nbsp; else { <br> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Put player " + player.getName()) + " on the junior team as a goal keeper"); &nbsp;
+                                    &nbsp;&nbsp;
+                                    <br> &nbsp; &nbsp;&nbsp;} &nbsp; &nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;} <br> else { <br> &nbsp; &nbsp;&nbsp;System.out.println("Player is not a goal keeper"); <br>}<br>
+
+                                    </p>
+                                    <p>This could also be done by using a compound condition,
+                                        <br> if ((player.isGoalKeeper()) && (player.getAge() >= 21)) {<br> &nbsp; &nbsp;&nbsp; System.out.println("Put player " + player.getName()) + <br> " on the senior team as a goal keeper"); <br> &nbsp; &nbsp;&nbsp;
+                                        }
+                                        <br> else if ((player.isGoalKeeper()) {<br> &nbsp; &nbsp;&nbsp; System.out.println("Put player " + player.getName()) + <br> " on the junior team as a goal keeper");<br> &nbsp; &nbsp;&nbsp; }<br> else {<br> &nbsp;
+                                        &nbsp;&nbsp; System.out.println("Player is not a goal keeper"); <br> &nbsp; &nbsp;&nbsp; }<br>
+
+                                    </p>
+                                    <p>Nested conditions can be used in staggerred evaluations, like the one presented above. Typically, a compound condition or a series of compound conditions can be used in the place of a nested if.</p>
+
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Nested loop
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What is a nested loop?<br>
+                                    <i class="material-icons custom">stars</i> When is a nested loop required?
+                                    <br>
+                                    <br>
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>A nested loop is a loop within another loop.</p>
+                                    <p>A nested loop is required for processing a set of data in an inner loop for each value in an outer loop. An example would be processing blood work in a hospital for each patient in a ward full of patients with a common
+                                        ailment and all patients requiring a set number of tests.</p>
+                                    <br> int patientNumber = 1;<br> while (patientNumber &lt; MAX_PATIENTS) {<br> &nbsp; &nbsp;&nbsp; int testNumber = 1;<br> &nbsp; &nbsp;&nbsp; while (testNumber &lt;= TESTS_REQUIRED_COUNT)<br> &nbsp; &nbsp;&nbsp; &nbsp;
+                                    &nbsp;&nbsp; processTest(patientNumber, testNumber);<br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; testNumber++;<br> &nbsp; &nbsp;&nbsp; }<br> }
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>A nested while loop can be mirrored with a nested for loop, and for loops can exist inside while loops and vice versa.</p>
+
+
+                                    <br> for (patientNumber = 1; patientNumber &lt; MAX_PATIENTS; patientNumber++) {<br> &nbsp; &nbsp;&nbsp; for (testNumber = 1; testNumber &lt;= TESTS_REQUIRED_COUNT; testNumber++)<br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                                    processTest(patientNumber, testNumber);<br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; testNumber++;<br> &nbsp; &nbsp;&nbsp; }<br> }
+                                    <br>
+
+                                    </pre>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Nested loop execution
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i> How many times does a nested loop run?
+                                    <br>
+                                    <i class="material-icons custom">stars</i> Can a nested loop be an infinite loop?
+                                    <br>
+
+                                    <br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <br>
+                                    <p>
+                                        A nested loop runs for all sentry variable values in the outer loop, and for each value of the outer loop's sentry variable, for all values of the inner loop's sentry variable. The times tables is a good way to see this.
+
+                                    </p>
+                                    <p>
+                                        <br>
+                                        <br> for (int factor1 = 1; factor1 &lt; 13; factor1++) {<br> &nbsp; &nbsp;&nbsp; for (int factor2 = 1; factor2 &lt; 13; factor2++) {<br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; System.out.println(factor1 + " x "
+                                        + factor2 + <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; " = " + (factor1*factor2))<br> &nbsp;&nbsp; &nbsp;&nbsp;}
+                                        <br> }
+                                        <br>
+
+                                        <p> This produces,
+                                        </p>
+                                        1 x 1 = 1<br><br> to
+
+                                        <br><br> 12 x 12 = 144<br>
+
+
+                                        <p>For each of the 12 values, 1,2,3,4,5,6,7,8,9,10,11,12, in the outer loop, the inner loop also runs 12 times. The body of the inner loop is executed 12 by 12 times in total, which is 144.</p>
+                                        <p>A nested loop can easily become an infinite loop if either the outer loop condition does not ever become false, or if the inner loop condition does not ever become false.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- SWAPPING VALUES -->
+    <div class="modal center-me" id="swapping" tabindex=-1 aria-labelledby="swappingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Swapping values</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Swapping primitive variable values</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i>How do primitive type variable assignments cause values to change?<br>
+                                    <i class="material-icons custom">stars</i>Does the order of assignments matter?
+                                    <br></td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p>Assignments between variables cause changes in the current values of the variables.
+                                    </p>
+                                    <p>
+                                        <br> int val1 = 9;<br> int val2 = 7;<br> int val3 = 3;<br><br><br> val1 = val2;<br> val3 = val1;<br>
+                                        <br> val1 is assigned the value of val2, which is 7. val3 is then assigned the value of val1, which has changed from 9 to 7. This means that val1, val2 and val3 all have a value of 7.
+                                    </p>
+                                    <p>The order of the assignments is important for the final result.</p>
+
+                                </td>
+                            </tr>
+
+                            <tr class="trquestion">
+
+                                <td colspan="2" class="infocell">
+                                    Swapping references
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <i class="material-icons custom">stars</i>What happens when references are reassigned?
+                                    <br>
+
+                                    <i class="material-icons custom">stars</i>Are aliases created when references are reassigned?<br>
+                                    <i class="material-icons custom">stars</i>How do object attributes change after objects are reassigned?<br>
+                                    <i class="material-icons custom">stars</i>Does the order of assignments matter?
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>References are memory addresses, and we see them in using objects. When one 'object' is assigned to another, references are changed and objects point to different locations in memory.</p>
+
+                                    <p>
+                                        <p>Assume class SoccerPlayer, with a constructor that takes the player name as a parameter.</p>
+                                        <br> SoccerPlayer player1 = new SoccerPlayer("Harry Kane");<br> SoccerPlayer player2 = new SoccerPlayer("Jamie Vardy");<br> SoccerPlayer player3 = new SoccerPlayer("Moussa Sissoko");<br><br> player1 = player2;<br>                                        player2 = player3;<br> player3 = player1;<br>
+                                        </pre>
+                                    </p>
+                                    <p>Above, player1, player2 and player3 have been newed up as instances of class SoccerPlayer. </p>
+
+
+                                    <img class="imgUnitBigger" src="images/assign1.png">
+                                    <br>
+                                    <p>The content of <i>name</i> parameter is transferred to instance variable, name, and getter getName() has been defined. </p>
+                                    <br>
+                                    <p>
+                                        After the first assignment, <i>player1 = player2</i>, player1 points to the memory location that player2's information starts at. At this point, player1 and player2 are aliases of each other. player1.getname() andplayer2.getName()
+                                        both return "Moussa Sissoko" </p>
+                                    <img class="imgUnitBigger" src="images/assign2.png">
+
+
+                                    <br><br>
+                                    <p>After the second assignment, player2 = player3, the reference for player2 is set to point at the starting memory location for player3's data.</p>
+                                    <img class="imgUnitBigger" src="images/assign3.png">
+                                    <br>
+                                    <p>Now, player2.getname() returns "Jamie Vardy", and player3.getName() also returns "Jamie Vardy".</p>
+                                    <br><br>
+                                    <p>Finally, after the third assignment, player3 = player1, player3 now shares a reference with player1, player1 and player3 end up as aliases of each other.
+                                    </p>
+                                    <img class="imgUnitBigger" src="images/assign4.png">
+                                    <br><br>
+                                    <p>
+                                        After the assignments, player1's name is "Jamie Vardy", player2's name is "Moussa Sissoko" and player3's name is "Jamie Vardy". The order of these assignments determines the end result.</p>
+                                </td>
+
+                            </tr>
+
+                    </table>
+
+
+                    </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script>
+        function updateSliderArrowsStatus(
+            cardsContainer,
+            containerWidth,
+            cardCount,
+            cardWidth
+        ) {
+            if (
+                $(cardsContainer).scrollLeft() + containerWidth <
+                cardCount * cardWidth + 15
+            ) {
+                $("#slide-right-container").addClass("active");
+            } else {
+                $("#slide-right-container").removeClass("active");
+            }
+            if ($(cardsContainer).scrollLeft() > 0) {
+                $("#slide-left-container").addClass("active");
+            } else {
+                $("#slide-left-container").removeClass("active");
+            }
+        }
+        $(function() {
+            // Scroll products' slider left/right
+            let div = $("#cards-container");
+            let cardCount = $(div)
+                .find(".cards")
+                .children(".card").length;
+            let speed = 1000;
+            let containerWidth = $(".container").width();
+            let cardWidth = 250;
+
+            updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+
+            //Remove scrollbars
+            $("#slide-right-container").click(function(e) {
+                if ($(div).scrollLeft() + containerWidth < cardCount * cardWidth) {
+                    $(div).animate({
+                        scrollLeft: $(div).scrollLeft() + cardWidth
+                    }, {
+                        duration: speed,
+                        complete: function() {
+                            setTimeout(
+                                updateSliderArrowsStatus(
+                                    div,
+                                    containerWidth,
+                                    cardCount,
+                                    cardWidth
+                                ),
+                                1005
+                            );
+                        }
+                    });
+                }
+                updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+            });
+            $("#slide-left-container").click(function(e) {
+                if ($(div).scrollLeft() + containerWidth > containerWidth) {
+                    $(div).animate({
+                        scrollLeft: "-=" + cardWidth
+                    }, {
+                        duration: speed,
+                        complete: function() {
+                            setTimeout(
+                                updateSliderArrowsStatus(
+                                    div,
+                                    containerWidth,
+                                    cardCount,
+                                    cardWidth
+                                ),
+                                1005
+                            );
+                        }
+                    });
+                }
+                updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+            });
+
+            // If resize action ocurred then update the container width value
+            $(window).resize(function() {
+                try {
+                    containerWidth = $("#cards-container").width();
+                    updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+                } catch (error) {
+                    console.log(
+                        `Error occured while trying to get updated slider container width: 
+            ${error}`
+                    );
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $('#myModal').on('shown.bs.modal', function() {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+    <script>
+        var includeall = true;
+        $(document).ready(function() {
+            $('input[type=checkbox][id=include2]').change(function() {
+                if ($(this).prop("checked")) {
+                    alert(`${this.value} you will see all 10 units`);
+                    includeall = true;
+                } else {
+                    alert(`${this.value} you will see only material in units 1 through 5`);
+                    includeall = false;
+                }
+                showhide(includeall);
+            });
+            showhide(includeall);
+        });
+    </script>
+
+
+    <script>
+        function showhide(includesecond) {
+            var allsemester2 = document.getElementsByClassName("s2");
+            for (var val of allsemester2) {
+                if (includeall) {
+                    val.style.display = "inline-block";
+                    // val.style.display = "block";
+                } else {
+                    val.style.display = "none";
+                }
+            }
+
+        }
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
